@@ -1,0 +1,114 @@
+/** {*/
+/*    box-sizing: border-box*/
+/*}*/
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.component--box {
+    margin: 1rem;
+    border: 1px solid var(--primary-color-light);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    width: calc(100% - 2rem);
+    max-width: calc(100vw - 6rem);
+}
+
+.component--nav {
+    grid-area: component-nav;
+    padding-top: 3rem;
+    border-right: 1px var(--primary-color);
+    min-width: 10rem;
+    background-color: unset;
+    color: black;
+    display: none;
+    position: sticky;
+    top: 4rem;
+    z-index: 2;
+    height: 93vh;
+    overflow-y: scroll;
+}
+
+pre {
+    /*display: none;*/
+    /*display: inline-block;*/
+}
+
+pre[class*="language-"] {
+    padding: 1em;
+    margin: .5em 0;
+    overflow: auto;
+    border-radius: 0.3em;
+    max-width: 100%;
+}
+
+
+
+.component--nav .nav-link {
+    color: black;
+}
+
+.component--nav li {
+    padding: 1rem 0;
+}
+
+.main--nav {
+    grid-area: main-nav;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+
+.main--panel {
+    padding-left: 2rem;
+    grid-area: components;
+    width: 100%;
+    max-width: 50rem;
+}
+
+.container {
+    display: grid;
+    grid-template-areas:
+        "main-nav main-nav main-nav"
+        "component-nav components components"
+
+}
+
+@media only screen and (min-width: 720px) {
+
+    .component--nav {
+        display: unset;
+    }
+
+    .main--panel{
+        padding-left: 2rem;
+    }
+
+    .component--box {
+        max-width: calc(100vw - 16rem);
+
+    }
+
+}
+
+/*@media only screen and (max-width: 700px) {*/
+/*    pre{*/
+/*        display: block !important;*/
+/*        margin: 0 auto !important;*/
+/*        max-width: 80% !important;*/
+/*        height: auto !important;*/
+/*        font-size: 1rem !important;*/
+/*        overflow: auto !important;*/
+/*        box-sizing: unset !important;*/
+/*        background-clip: unset !important;*/
+/*    }*/
+/*}*/
+
+

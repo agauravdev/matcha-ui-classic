@@ -1,0 +1,79 @@
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /*align-items: center;*/
+    padding: 0.5rem;
+    /*border: 1px solid grey;*/
+    font-size: 1rem;
+    max-width: 15rem;
+    border-radius: 0.7rem;
+}
+
+.card__border {
+    border: 1px solid grey;
+}
+
+.card--center {
+    align-items: center;
+}
+
+.card--fluid {
+    max-width: unset;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.card__image {
+    /*margin: 0.5rem;*/
+    width: 100%;
+    height: auto;
+}
+
+.card--fluid .card__image {
+    width: 25%;
+    max-width: 10rem;
+    min-height: 100%;
+    object-fit: cover;
+}
+
+.card--fluid .card__body {
+    margin-left: 2rem;
+    justify-content: space-between;
+}
+
+.card__button-group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card__button-group button {
+    margin-right: 1.5rem;
+    margin-bottom: 0.5rem;
+
+}
+
+.card__body {
+    display: flex;
+    flex-direction: column;
+}
+
+.card__heading {
+    font-size: 1.2rem;
+    margin-bottom: unset;
+}
+
+.card__badge {
+    position: absolute;
+    top: 0.5rem;
+    left: 0.1rem;
+    font-size: 0.8rem;
+    background-color: var(--primary-color-light);
+    border-radius: 0.25rem;
+    padding: 0.1rem 0.5rem;
+    opacity: 85%;
+}
+
+

@@ -1,0 +1,41 @@
+.avatar {
+    --size: 5rem;
+    border-radius: 50%;
+    width: var(--size);
+    height: var(--size);
+    object-fit: cover;
+}
+
+.avatar--border {
+    box-shadow: 0 0 0 3px #fff, 0 0 0 4px #999, 0 2px 5px 4px rgba(0,0,0,.2);
+}
+
+.avatar--xs {
+    width: 2rem;
+    height: 2rem;
+}
+
+.avatar--sm {
+    width: 3rem;
+    height: 3rem;
+}
+
+.avatar--md {
+    width: 4rem;
+    height: 4rem;
+}
+
+.avatar--lg {
+    width: 6rem;
+    height: 6rem;
+}
+
+.avatar--xl {
+    width: 8rem;
+    height: 8rem;
+}
+
+.avatar--xxl {
+    width: 12rem;
+    height: 12rem;
+}

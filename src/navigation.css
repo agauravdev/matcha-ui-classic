@@ -1,0 +1,45 @@
+.navigation {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.nav--primary {
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+.nav--secondary {
+    display: none;
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    padding: 0 0.3rem;
+}
+
+.nav-link.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* ToDo change this media query to min-width 768 */
+
+@media only screen and (min-width: 560px) {
+    .nav--primary{
+        width: unset;
+        justify-content: flex-start;
+    }
+
+    .nav--secondary{
+        display: flex;
+    }
+
+}

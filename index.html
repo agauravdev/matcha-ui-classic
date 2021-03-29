@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="src/main.css" rel="stylesheet">
+    <link href="documentation.css" rel="stylesheet">
+    <link href="src/assets/prism.css" rel="stylesheet">
+    <script src="src/assets/prism.js"></script>
+
+</head>
+<body>
+<div class="container">
+    <header class="main--nav">
+        <nav class="navigation">
+            <ul class="nav--primary">
+                <li><a class="nav-link active" href="#"><img style="width: 1rem" src="./src/assets/matcha%20(1).svg"></a></li>
+                <li><a class="nav-link active" href="#">Documentation</a></li>
+                <li><a class="nav-link" href="#">Examples</a></li>
+                <li><a class="nav-link" href="#">Surprise</a></li>
+            </ul>
+        </nav>
+    </header>
+    <nav class="component--nav navigation">
+        <h2>Components</h2>
+        <ul class="unstyled--list">
+            <li><a class="nav-link" href="#alert">Alerts</a></li>
+            <li><a class="nav-link" href="#avatar">Avatar</a></li>
+            <li><a class="nav-link" href="#badges">Badges</a></li>
+            <li><a class="nav-link" href="#buttons">Buttons</a></li>
+            <li><a class="nav-link" href="#cards">Cards</a></li>
+            <li><a class="nav-link" href="#lists">Lists</a></li>
+            <li><a class="nav-link" href="#nav">Navigation</a></li>
+            <li><a class="nav-link" href="#notif">Notification</a></li>
+        </ul>
+    </nav>
+    <main class="main--panel">
+        <h1 id="alert">
+            Alerts
+        </h1>
+        <div class="component--box">
+            <div class="alert alert--success">Primary Color / Success Alert</div>
+            <div class="alert alert--secondary">Secondary Alert</div>
+            <div class="alert alert--danger">Danger Alert</div>
+            <div class="alert alert--info">Info Alert</div>
+            <div class="alert alert--warning">Warning Alert</div>
+            <script class="language-markup" type="text/plain"><div class="alert alert--success">Primary Color / Success Alert</div>
+<div class="alert alert--secondary">Secondary Alert</div>
+<div class="alert alert--danger">Danger Alert</div>
+<div class="alert alert--info">Info Alert</div>
+<div class="alert alert--warning">Warning Alert</div></script>
+        </div>
+
+        <hr/>
+        <h1 id="avatar">
+            Avatar
+        </h1>
+        <div class="component--box">
+            <img alt="me" class="avatar avatar--xs" src="src/assets/me.jpg"/>
+            <img alt="me" class="avatar avatar--sm" src="src/assets/me.jpg"/>
+            <img alt="me" class="avatar avatar--md" src="src/assets/me.jpg"/>
+            <img alt="me" class="avatar avatar--lg" src="src/assets/me.jpg"/>
+            <img alt="me" class="avatar avatar--xl" src="src/assets/me.jpg"/>
+            <img alt="me" class="avatar avatar--xxl" src="src/assets/me.jpg"/>
+            <script class="language-markup" type="text/plain"><img alt="me" class="avatar avatar--xs" src="src/assets/me.jpg"/>
+<img alt="me" class="avatar avatar--sm" src="src/assets/me.jpg"/>
+<img alt="me" class="avatar avatar--md" src="src/assets/me.jpg"/>
+<img alt="me" class="avatar avatar--lg" src="src/assets/me.jpg"/>
+<img alt="me" class="avatar avatar--xl" src="src/assets/me.jpg"/>
+<img alt="me" class="avatar avatar--xxl" src="src/assets/me.jpg"/></script>
+        </div>
+
+        <hr/>
+        <h1 id="badges">Badges</h1>
+        <div class="component--box">
+            <div class="badge--container">
+                <img alt="me" class="avatar avatar--lg" src="src/assets/me.jpg"/>
+                <span class=" badge badge--avatar"></span>
+            </div>
+            <div class="badge--container">
+                <img alt="me" class="avatar avatar--sm" src="src/assets/me.jpg"/>
+                <span class=" badge badge--avatar"></span>
+            </div>
+            <div class="badge--container">
+                <i class="fas fa-shopping-cart" style="font-size: 2rem; color: dimgrey"></i>
+                <span class="badge badge--icon">2</span>
+            </div>
+            <script class="language-markup" type="text/plain"><div class="badge--container">
+    <img alt="me" class="avatar avatar--lg" src="src/assets/me.jpg"/>
+    <span class=" badge badge--avatar"></span>
+</div>
+<div class="badge--container">
+    <img alt="me" class="avatar avatar--sm" src="src/assets/me.jpg"/>
+    <span class=" badge badge--avatar"></span>
+</div>
+<div class="badge--container">
+    <i class="fas fa-shopping-cart" style="font-size: 2rem; color: dimgrey"></i>
+    <span class="badge badge--icon">2</span>
+</div></script>
+        </div>
+
+
+        <h1 id="buttons">Buttons</h1>
+        <div class="component--box">
+            <button class="button button--primary">Primary</button>
+            <button class="button button--secondary">Secondary</button>
+            <button class="button button--outline-primary">Outline Primary</button>
+            <button class="button button--borderless">Borderless Button</button>
+            <script class="language-markup" type="text/plain"><button class="button button--primary">Primary</button>
+<button class="button button--secondary">Secondary</button>
+<button class="button button--outline-primary">Outline Primary</button>
+<button class="button button--borderless">Borderless Button</button></script>
+        </div>
+
+        <h1 id="cards">Cards</h1>
+        <small>Don't use fluid cards in mobile. Why? They break 😭. </small>
+        <div class="component--box">
+            <div class="card card--fluid card__border">
+                <img src="src/assets/me.jpg" class="card__image" alt="me">
+                <div class="card__body">    <h1 class="card__heading">Fluid Card / Horizontal Card</h1>
+                    <small>Tagline</small><p>Some text here</p>
+                    <span class="card__badge">new</span>
+                    <div class="card__button-group"><button class="button button--primary">Checkout</button>
+                        <button class="button button--secondary">Checkout</button></div>
+                </div>
+            </div>
+            <br/>
+            <div class="card card__border">
+                <img src="src/assets/me.jpg" class="card__image" alt="me">
+                <div class="card__body">
+                    <h1 class="card__heading">Card</h1>
+                    <small>Tagline</small>
+                    <p>Some text here</p>
+                    <span class="card__badge">Special Offer</span>
+                    <button class="button button--primary">Action</button>
+                </div>
+            </div>
+            <script class="language-markup" type="text/plain"><div class="card card--fluid card__border">
+    <img src="src/assets/me.jpg" class="card__image" alt="me">
+    <div class="card__body">    <h1 class="card__heading">Fluid Card / Horizontal Card</h1>
+        <small>Tagline</small><p>Some text here</p>
+        <span class="card__badge">new</span>
+        <div class="card__button-group"><button class="button button--primary">Checkout</button>
+            <button class="button button--secondary">Checkout</button></div>
+    </div>
+</div>
+<br/>
+<div class="card card__border">
+    <img src="src/assets/me.jpg" class="card__image" alt="me">
+    <div class="card__body">
+        <h1 class="card__heading">Card</h1>
+        <small>Tagline</small>
+        <p>Some text here</p>
+        <span class="card__badge">Special Offer</span>
+        <button class="button button--primary">Action</button>
+    </div>
+</div></script>
+        </div>
+
+        <h1 id="lists">Lists</h1>
+        <div class="component--box">
+            <h4>Stacked List</h4>
+            <ul class="stacked--list">
+                <li>
+                    <div class="notif"> <div class="notif__title">Notification Title</div> <div class="notif__text"> Some Text </div> </div>
+                </li>
+                <li>
+                    <div class="notif"> <img src="src/assets/me.jpg" alt="me" class="avatar avatar--sm notif__avatar"/> <div class="notif__title">Notification Title</div> <div class="notif__text"> Some Text </div> </div>
+                </li>
+                <li>
+                    <div class="notif"> <img src="src/assets/me.jpg" alt="me" class="avatar avatar--sm notif__avatar"/> <div class="notif__title">Notification Title</div> <div class="notif__text"> Some Text </div> </div>
+                </li>
+            </ul>
+            <br/>
+            <h4>Unstyled List</h4>
+            <ul class="unstyled--list">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+            <br/>
+            <h4>Square Styled List</h4>
+            <ul class="styled--square">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+            <script class="language-markup" type="text/plain"><ul class="stacked--list">
+    <li>
+        <div class="notif"> <div class="notif__title">Notification Title</div> <div class="notif__text"> Some Text </div> </div>
+    </li>
+    <li>
+        <div class="notif"> <img src="src/assets/me.jpg" alt="me" class="avatar avatar--sm notif__avatar"/> <div class="notif__title">Notification Title</div> <div class="notif__text"> Some Text </div> </div>
+    </li>
+    <li>
+        <div class="notif"> <img src="src/assets/me.jpg" alt="me" class="avatar avatar--sm notif__avatar"/> <div class="notif__title">Notification Title</div> <div class="notif__text"> Some Text </div> </div>
+    </li>
+</ul>
+<ul class="unstyled--list">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+</ul>
+<ul class="styled--square">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+</ul></script>
+        </div>
+
+        <h1 id="nav">Navigation Bar</h1>
+        <div class="component--box">
+            <nav class="navigation">
+                <ul class="nav--primary">
+                    <li><a href="#" class="nav-link active">Home</a></li>
+                    <li><a href="#" class="nav-link">Blog</a></li>
+                    <li><a href="#" class="nav-link">Pages</a></li>
+                    <li><a href="#" class="nav-link">Projects</a></li>
+                </ul>
+                <ul class="nav--secondary">
+                    <li><a href="#" class="nav-link"><i class="fab fa-facebook-square"></i></a></li>
+                    <li><a href="#" class="nav-link"><i class="fab fa-twitter-square"></i></a></li>
+                    <li><a href="#" class="nav-link"><i class="fas fa-moon"></i></a></li>
+                </ul>
+            </nav>
+            <script class="language-markup" type="text/plain"><nav class="navigation">
+    <ul class="nav--primary">
+        <li><a href="#" class="nav-link active">Home</a></li>
+        <li><a href="#" class="nav-link">Blog</a></li>
+        <li><a href="#" class="nav-link">Pages</a></li>
+        <li><a href="#" class="nav-link">Projects</a></li>
+    </ul>
+    <ul class="nav--secondary">
+        <li><a href="#" class="nav-link"><i class="fab fa-facebook-square"></i></a></li>
+        <li><a href="#" class="nav-link"><i class="fab fa-twitter-square"></i></a></li>
+        <li><a href="#" class="nav-link"><i class="fas fa-moon"></i></a></li>
+    </ul>
+</nav></script>
+        </div>
+
+        <h1 id="notif">Notification</h1>
+        <div class="component--box">
+            <div class="notif">
+                <img src="src/assets/me.jpg" alt="me" class="avatar avatar--sm notif__avatar"/>
+                <div class="notif__title">
+                    Notification Title
+                </div>
+                <div class="notif__text">Some Text</div>
+            </div>
+            <script class="language-markup" type="text/plain"><div class="notif">
+    <img src="src/assets/me.jpg" alt="me" class="avatar avatar--sm notif__avatar"/>
+    <div class="notif__title">
+        Notification Title
+    </div>
+    <div class="notif__text">Some Text</div>
+</div></script>
+        </div>
+
+    </main>
+</div>
+</body>
+</html>
