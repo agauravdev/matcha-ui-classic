@@ -3,12 +3,11 @@
     display: inline-block;
     padding: 0.5rem 1rem;
     border-radius: 0.25rem;
-    background-color: unset;
-    border:unset;
+    background-color: transparent;
+    border:none;
     font-size: 1rem;
     text-align: center;
     cursor: pointer;
-    outline: unset;
     color: white;
 }
 

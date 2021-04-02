@@ -20,7 +20,7 @@
 }
 
 .card--fluid {
-    max-width: unset;
+    max-width: none;
     flex-direction: row;
     justify-content: flex-start;
 }
@@ -62,7 +62,6 @@
 
 .card__heading {
     font-size: 1.2rem;
-    margin-bottom: unset;
 }
 
 .card__badge {
