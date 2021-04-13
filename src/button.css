@@ -15,8 +15,16 @@
     background-color: var(--primary-color);
 }
 
+.button--primary:hover{
+    background-color: var(--primary-color-dark);
+}
+
 .button--secondary {
     background-color: var(--secondary-color);
+}
+
+.button--secondary:hover {
+    background-color: darkgray;
 }
 
 .button--outline-primary {
@@ -24,6 +32,11 @@
     border: 2px solid var(--primary-color);
     color: var(--primary-color);
     font-weight: 500;
+}
+
+.button--outline-primary:hover {
+    border: 2px solid var(--primary-color-dark);
+    color: var(--primary-color-dark);
 }
 
 .button--outline-secondary {

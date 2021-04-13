@@ -5,18 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Matcha UI</title>
-    <link href="src/main.css" rel="stylesheet">
+    <link href="src/main-dev.css" rel="stylesheet">
     <link href="documentation.css" rel="stylesheet">
     <link href="src/assets/prism.css" rel="stylesheet">
     <script src="src/assets/prism.js"></script>
 
 </head>
 <body>
+    <div class="hamburger">
+        <button onclick="toggle()">        
+            <i class="fas fa-bars" id="hamburger"></i>
+        </button>
+    </div>
 <div class="container">
     <header class="main--nav">
-        <nav class="navigation">
+        <nav class="navigation" id="nav">
+            <!-- <button class="button button--borderless" id="close-nav"><i class="fas fa-times" style="font-size: 2rem; color: dimgrey;"></i></button> -->
+            <a class="nav-link brand" href="#"><img style="width: 1rem" src="./src/assets/matcha%20(1).svg" alt="matcha">&nbsp; Matcha UI</a>
             <ul class="nav--primary">
-                <li><a class="nav-link brand" href="#"><img style="width: 1rem" src="./src/assets/matcha%20(1).svg" alt="matcha">&nbsp; Matcha UI</a></li>
                 <li><a class="nav-link active" href="#">Documentation</a></li>
                 <li><a class="nav-link" href="#">Examples</a></li>
                 <li><a class="nav-link" href="#">Surprise</a></li>
@@ -36,7 +42,7 @@
             <li><a class="nav-link" href="#notif">Notification</a></li>
         </ul>
     </nav>
-    <main class="main--panel">
+    <main class="main--panel" style="padding-top: 2rem;">
         <h1 id="alert">
             Alerts
         </h1>
@@ -260,5 +266,14 @@
 
     </main>
 </div>
+
+<script>
+    const nav = document.getElementById("nav");
+    const hamburger = document.getElementById('hamburger');
+
+    const toggle = () => {
+        nav.classList.toggle("open");
+    }
+</script>
 </body>
 </html>
