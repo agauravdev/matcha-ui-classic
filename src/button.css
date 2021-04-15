@@ -1,0 +1,76 @@
+.button {
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    background-color: transparent;
+    border:none;
+    font-size: 1rem;
+    text-align: center;
+    cursor: pointer;
+    color: white;
+}
+
+.button--primary {
+    background-color: var(--primary-color);
+}
+
+.button--primary:hover{
+    background-color: var(--primary-color-dark);
+}
+
+.button--secondary {
+    background-color: var(--secondary-color);
+}
+
+.button--secondary:hover {
+    background-color: darkgray;
+}
+
+.button--outline-primary {
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.button--outline-primary:hover {
+    border: 2px solid var(--primary-color-dark);
+    color: var(--primary-color-dark);
+}
+
+.button--outline-secondary {
+    background-color: transparent;
+    border: 2px solid var(--secondary-color);
+    color: var(--secondary-color);
+    font-weight: 500;
+}
+
+.button--icon {
+    padding-right: 0.5rem;
+}
+
+.button--borderless {
+    border : none;
+    color: var(--primary-color);
+}
+
+.floating--action-button {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 50%;
+    z-index: 1000;
+}
+
+/*will work on this later*/
+/*.button:focus {*/
+/*    box-shadow: 0 0 0 0.15rem rgba(49, 132, 253, 0.5) ;*/
+/*}*/

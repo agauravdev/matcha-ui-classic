@@ -1,0 +1,25 @@
+.notification__avatar {
+    grid-area: notif-avatar;
+    margin-right: 1rem;
+}
+
+.notification__text {
+    grid-area: notif-text;
+    color: var(--secondary-color-dark);
+    font-size: 0.8rem;
+}
+
+.notification__title {
+    grid-area: notif-title;
+    font-weight: 500;
+    font-size: 1rem;
+
+}
+
+
+.notification {
+    display: inline-grid;
+    grid-template-areas:
+    "notif-avatar notif-title"
+    "notif-avatar notif-text"
+}

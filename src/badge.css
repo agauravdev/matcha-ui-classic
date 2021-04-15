@@ -1,0 +1,46 @@
+.badge {
+    position: absolute;
+    border-radius: 50%;
+    border: 0.2rem solid white;
+}
+
+.badge--container {
+    position: relative;
+    display: inline-block;
+    margin-right: 2rem
+}
+
+.badge--avatar {
+    background-color: var(--primary-color);
+    bottom: 0.3rem;
+    right: 0.3rem;
+    height: 25%;
+    width: 25%;
+}
+
+.badge--icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -0.2rem;
+    right: -0.3rem;
+    background-color: #ff3f6c;
+    border: none;
+    text-align: center;
+    font-size: 0.7rem;
+    min-width: 1.2rem;
+    height: 1.2rem;
+    color: black;
+}
+
+.badge--secondary {
+    background-color: var(--secondary-color-light);
+}
+
+.badge--red {
+    background-color: red;
+}
+
+.badge--yellow {
+    background-color: yellow;
+}
